@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtname"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="#80ed99"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LINH KIỆN MÁY TÍNH" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:background="#abc4ff" />
+    <TextView
+        android:id="@+id/dslk"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#03045e"
+        android:layout_marginTop="306dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DANH SÁCH CÁC LINH KIỆN" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="340dp"
+        android:background="#80ed99" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="130dp"
+        android:text="Hình ảnh:"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/editAnh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="118dp"
+        android:layout_marginRight="10dp"
+        android:ems="15"
+        android:text="res/drawable/anh1.png"
+        android:textSize="16dp">
+
+        <requestFocus />
+    </EditText>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="160dp"
+        android:text="Tên:"
+        android:layout_marginLeft="20dp"
+        android:textSize="16dp"/>
+
+    <EditText
+        android:id="@+id/editTen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="148dp"
+        android:layout_marginRight="10dp"
+        android:ems="15"
+        android:text="Bàn Phím"
+        android:textSize="16dp">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="190dp"
+        android:text="Giá bán:"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/editGia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="178dp"
+        android:layout_marginRight="10dp"
+        android:ems="15"
+        android:text="500.000 VNĐ"
+        android:textSize="16dp">
+
+        <requestFocus />
+    </EditText>
+
+    <ImageButton
+        android:id="@+id/lui"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="230dp"
+        android:layout_marginRight="300dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/lui"
+        android:scaleType="fitCenter"
+        android:src="@drawable/lui" />
+    <ImageButton
+        android:id="@+id/toi"
+        android:layout_marginTop="230dp"
+        android:layout_width="55dp"
+        android:layout_marginRight="235dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:adjustViewBounds="true"
+        android:background="@drawable/toi"
+        android:scaleType="fitCenter"
+        android:src="@drawable/toi" />
+
+    <ImageButton
+        android:id="@+id/search"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="230dp"
+        android:layout_marginRight="173dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/search"
+        android:scaleType="fitCenter"
+        android:src="@drawable/search" />
+
+    <ImageButton
+        android:id="@+id/ad"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="230dp"
+        android:layout_marginRight="115dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ad"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ad" />
+
+    <ImageButton
+        android:id="@+id/exit"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="230dp"
+        android:layout_marginRight="50dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/exit"
+        android:scaleType="fitCenter"
+        android:src="@drawable/exit" />
+
+    <ListView
+        android:id="@+id/lv_lk"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="350dp" />
+
+
+</RelativeLayout>
