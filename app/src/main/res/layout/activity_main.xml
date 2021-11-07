@@ -8,11 +8,10 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/txtname"
         android:textStyle="bold"
-        android:textSize="30dp"
+        android:textSize="35dp"
         android:textColor="#80ed99"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="35dp"
         android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -43,15 +42,15 @@
         android:background="#80ed99" />
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="130dp"
         android:text="Hình ảnh:"
         android:textSize="16dp" />
 
     <EditText
-        android:id="@+id/editAnh"
+        android:id="@+id/ed_anh"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
@@ -59,22 +58,23 @@
         android:layout_marginRight="10dp"
         android:ems="15"
         android:text="res/drawable/anh1.png"
-        android:textSize="16dp">
-
+        android:textSize="16dp"
+        android:maxLines="1"
+        android:lines="1">
         <requestFocus />
     </EditText>
 
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="160dp"
         android:text="Tên:"
         android:layout_marginLeft="20dp"
         android:textSize="16dp"/>
 
     <EditText
-        android:id="@+id/editTen"
+        android:id="@+id/ed_Ten"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
@@ -82,30 +82,33 @@
         android:layout_marginRight="10dp"
         android:ems="15"
         android:text="Bàn Phím"
-        android:textSize="16dp">
-
+        android:textSize="16dp"
+        android:maxLines="1"
+        android:lines="1">
         <requestFocus />
     </EditText>
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="190dp"
         android:text="Giá bán:"
         android:textSize="16dp" />
 
     <EditText
-        android:id="@+id/editGia"
+        android:id="@+id/ed_Gia"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_marginTop="178dp"
         android:layout_marginRight="10dp"
         android:ems="15"
-        android:text="500.000 VNĐ"
-        android:textSize="16dp">
-
+        android:text="500.000 VND"
+        android:textSize="16dp"
+        android:maxLines="1"
+        android:lines="1"
+        android:inputType="number">
         <requestFocus />
     </EditText>
 
@@ -120,6 +123,7 @@
         android:background="@drawable/lui"
         android:scaleType="fitCenter"
         android:src="@drawable/lui" />
+
     <ImageButton
         android:id="@+id/toi"
         android:layout_marginTop="230dp"
@@ -145,6 +149,7 @@
         android:src="@drawable/search" />
 
     <ImageButton
+        android:onClick="goToUrl"
         android:id="@+id/ad"
         android:layout_width="55dp"
         android:layout_height="wrap_content"

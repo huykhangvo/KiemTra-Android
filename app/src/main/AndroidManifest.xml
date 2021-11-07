@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KiemTra40">
         <activity
+            android:name=".gioithieutacgia"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

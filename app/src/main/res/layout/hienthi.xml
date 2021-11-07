@@ -14,7 +14,6 @@
         android:id="@+id/TxtTen"
         android:layout_width="217dp"
         android:layout_height="39dp"
-
         android:layout_marginStart="8dp"
         android:layout_toEndOf="@+id/img" />
 
@@ -22,7 +21,6 @@
         android:id="@+id/TxtDong"
         android:layout_width="217dp"
         android:layout_height="39dp"
-
         android:layout_below="@+id/TxtTen"
         android:layout_marginStart="8dp"
         android:layout_marginTop="13dp"
