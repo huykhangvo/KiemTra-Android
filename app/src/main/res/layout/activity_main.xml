@@ -7,6 +7,59 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/toi"
+        android:layout_width="74dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ed_Gia"
+        android:layout_alignBottom="@+id/ed_Gia"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="260dp"
+        android:layout_marginBottom="-76dp"
+        android:background="@drawable/toi"
+        android:foreground="@drawable/toi" />
+
+    <Button
+        android:id="@+id/timkiem"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ed_Gia"
+        android:layout_alignBottom="@+id/ed_Gia"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="178dp"
+        android:layout_marginBottom="-77dp"
+        android:background="@drawable/search"
+        android:foreground="@drawable/search" />
+
+    <Button
+        android:id="@+id/tacgia"
+        android:layout_width="74dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ed_Gia"
+        android:layout_alignBottom="@+id/ed_Gia"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginBottom="-75dp"
+        android:background="@drawable/ad"
+        android:foreground="@drawable/ad"
+        android:onClick="ss" />
+
+    <Button
+        android:id="@+id/thoat"
+        android:layout_width="74dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ed_Gia"
+        android:layout_alignBottom="@+id/ed_Gia"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="-73dp"
+        android:background="@drawable/exit"
+        android:foreground="@drawable/exit" />
+
     <TextView
         android:textStyle="bold"
         android:textSize="35dp"
@@ -49,21 +102,23 @@
         android:text="Hình ảnh:"
         android:textSize="16dp" />
 
+
     <EditText
         android:id="@+id/ed_anh"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_marginTop="118dp"
-        android:layout_marginRight="10dp"
+        android:layout_marginRight="9dp"
         android:ems="15"
-        android:text="res/drawable/anh1.png"
-        android:textSize="16dp"
+        android:text="res/drawable/"
+        android:hint=""
+        android:lines="1"
         android:maxLines="1"
-        android:lines="1">
+        android:textSize="16dp">
+
         <requestFocus />
     </EditText>
-
 
     <TextView
         android:layout_width="wrap_content"
@@ -81,10 +136,11 @@
         android:layout_marginTop="148dp"
         android:layout_marginRight="10dp"
         android:ems="15"
-        android:text="Bàn Phím"
-        android:textSize="16dp"
+        android:hint="Bàn Phím"
+        android:lines="1"
         android:maxLines="1"
-        android:lines="1">
+        android:textSize="16dp">
+
         <requestFocus />
     </EditText>
 
@@ -104,74 +160,15 @@
         android:layout_marginTop="178dp"
         android:layout_marginRight="10dp"
         android:ems="15"
-        android:text="500.000 VND"
-        android:textSize="16dp"
-        android:maxLines="1"
+        android:hint="500.000 VND"
+        android:inputType="number"
         android:lines="1"
-        android:inputType="number">
+        android:maxLines="1"
+        android:textSize="16dp">
+
         <requestFocus />
     </EditText>
 
-    <ImageButton
-        android:id="@+id/lui"
-        android:layout_width="55dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="230dp"
-        android:layout_marginRight="300dp"
-        android:adjustViewBounds="true"
-        android:background="@drawable/lui"
-        android:scaleType="fitCenter"
-        android:src="@drawable/lui" />
-
-    <ImageButton
-        android:id="@+id/toi"
-        android:layout_marginTop="230dp"
-        android:layout_width="55dp"
-        android:layout_marginRight="235dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:adjustViewBounds="true"
-        android:background="@drawable/toi"
-        android:scaleType="fitCenter"
-        android:src="@drawable/toi" />
-
-    <ImageButton
-        android:id="@+id/search"
-        android:layout_width="55dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="230dp"
-        android:layout_marginRight="173dp"
-        android:adjustViewBounds="true"
-        android:background="@drawable/search"
-        android:scaleType="fitCenter"
-        android:src="@drawable/search" />
-
-    <ImageButton
-        android:onClick="goToUrl"
-        android:id="@+id/ad"
-        android:layout_width="55dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="230dp"
-        android:layout_marginRight="115dp"
-        android:adjustViewBounds="true"
-        android:background="@drawable/ad"
-        android:scaleType="fitCenter"
-        android:src="@drawable/ad" />
-
-    <ImageButton
-        android:id="@+id/exit"
-        android:layout_width="55dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="230dp"
-        android:layout_marginRight="50dp"
-        android:adjustViewBounds="true"
-        android:background="@drawable/exit"
-        android:scaleType="fitCenter"
-        android:src="@drawable/exit" />
 
     <ListView
         android:id="@+id/lv_lk"
@@ -179,6 +176,19 @@
         android:layout_height="match_parent"
         android:layout_alignParentTop="true"
         android:layout_marginTop="350dp" />
+
+    <Button
+        android:id="@+id/lui"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ed_Gia"
+        android:layout_alignBottom="@+id/ed_Gia"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="335dp"
+        android:layout_marginBottom="-74dp"
+        android:background="@drawable/lui"
+        android:foreground="@drawable/lui" />
 
 
 </RelativeLayout>

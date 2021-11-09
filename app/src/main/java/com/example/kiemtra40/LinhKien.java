@@ -1,21 +1,21 @@
 package com.example.kiemtra40;
 
 public class LinhKien {
-    int anh;
-    String ten;
-    String gia;
+    private String anh;
+    private String ten;
+    private String gia;
 
-    public LinhKien(int anh, String ten, String gia) {
+    public LinhKien(String anh, String ten, String gia) {
         this.anh = anh;
         this.ten = ten;
         this.gia = gia;
     }
 
-    public int getAnh() {
+    public String getAnh() {
         return anh;
     }
 
-    public void setAnh(int anh) {
+    public void setAnh(String anh) {
         this.anh = anh;
     }
 
@@ -34,4 +34,5 @@ public class LinhKien {
     public void setGia(String gia) {
         this.gia = gia;
     }
+
 }
